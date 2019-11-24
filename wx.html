@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="style.css"/
+    </head>
+    <body>
+    	<div>
+            <h2>somme</h2>
+            <input  type='float' id="Nmbr1" name="a" > 
+            <input type="float" id="Nmbr2" name="b"  >
+            <button id="button" type="button" onclick="calcule()">Calculer</button>
+            <p > result=<span id="result"></span></p>
+            </div>
+          
+            <script type="text/javascript">
+            function calcule(){
+                var number1 = document.getElementById("Nmbr1").value;
+                var number2= document.getElementById("Nmbr2").value;
+                var result = parseFloat(number1)+parseFloat(number2);
+                document.getElementById('result').innerHTML=result;
+}
+            </script>
+    </body>
+</html>
